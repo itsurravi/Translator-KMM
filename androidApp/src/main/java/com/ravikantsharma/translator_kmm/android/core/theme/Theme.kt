@@ -2,9 +2,9 @@ package com.ravikantsharma.translator_kmm.android.core.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Shapes
-import androidx.compose.material3.Typography
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Shapes
+import androidx.compose.material.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -41,27 +41,27 @@ fun TranslatorTheme(
     )
 
     val typography = Typography(
-        headlineLarge = TextStyle(
+        h1 = TextStyle(
             fontFamily = SfProText,
             fontWeight = FontWeight.Bold,
             fontSize = 30.sp
         ),
-        headlineMedium = TextStyle(
+        h2 = TextStyle(
             fontFamily = SfProText,
             fontWeight = FontWeight.Bold,
             fontSize = 24.sp
         ),
-        headlineSmall = TextStyle(
+        h3 = TextStyle(
             fontFamily = SfProText,
             fontWeight = FontWeight.Medium,
             fontSize = 18.sp
         ),
-        bodyLarge = TextStyle(
+        body1 = TextStyle(
             fontFamily = SfProText,
             fontWeight = FontWeight.Normal,
             fontSize = 14.sp
         ),
-        bodyMedium = TextStyle(
+        body2 = TextStyle(
             fontFamily = SfProText,
             fontWeight = FontWeight.Normal,
             fontSize = 12.sp
@@ -75,7 +75,7 @@ fun TranslatorTheme(
     )
 
     MaterialTheme(
-        colorScheme = colors,
+        colors = colors,
         typography = typography,
         shapes = shapes,
         content = content

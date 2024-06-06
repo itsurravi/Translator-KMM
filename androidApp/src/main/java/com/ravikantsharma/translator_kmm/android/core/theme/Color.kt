@@ -1,7 +1,7 @@
 package com.ravikantsharma.translator_kmm.android.core.theme
 
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
+import androidx.compose.material.darkColors
+import androidx.compose.material.lightColors
 import androidx.compose.ui.graphics.Color
 import com.ravikantsharma.translator_kmm.core.presentation.Colors
 
@@ -11,7 +11,7 @@ val LightBlueGrey = Color(Colors.LightBlueGrey)
 val TextBlack = Color(Colors.TextBlack)
 val DarkGrey = Color(Colors.DarkGrey)
 
-val lightColors = lightColorScheme(
+val lightColors = lightColors(
     primary = AccentViolet,
     background = LightBlueGrey,
     onPrimary = Color.White,
@@ -20,7 +20,7 @@ val lightColors = lightColorScheme(
     onSurface = TextBlack
 )
 
-val darkColors = darkColorScheme(
+val darkColors = darkColors(
     primary = AccentViolet,
     background = DarkGrey,
     onPrimary = Color.White,
