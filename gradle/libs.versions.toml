@@ -17,8 +17,8 @@ kotlinxSerializationJson = "1.6.2"
 sqlDelightVersion = "2.0.0"
 ktor = "2.3.7"
 dateTimeVersion = "0.4.1"
-hiltVersion = "2.42"
-hiltCompilerVersion = "1.0.0"
+hiltVersion = "2.50"
+hiltCompilerVersion = "1.2.0"
 coilComposeVersion = "2.1.0"
 
 [libraries]
@@ -31,6 +31,7 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = 
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+compose-icons = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose-material3" }
 
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
@@ -45,7 +46,7 @@ coilCompose = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVe
 
 hiltAndroid = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
 hiltAndroidCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltVersion" }
-hiltCompiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltCompilerVersion" }
+#hiltCompiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltCompilerVersion" }
 hiltNavigationCompose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltCompilerVersion" }
 
 ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }

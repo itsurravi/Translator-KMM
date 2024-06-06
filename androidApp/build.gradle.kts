@@ -10,7 +10,7 @@ android {
     namespace = "com.ravikantsharma.translator_kmm.android"
     compileSdk = libs.versions.compileSdk.get().toInt()
     defaultConfig {
-        applicationId = "com.ravikantsharma.translator_kmm.android"
+        applicationId = "com.ravikantsharma.translator_kmm"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.compileSdk.get().toInt()
         versionCode = libs.versions.appVersion.get().toInt()
@@ -46,14 +46,16 @@ dependencies {
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
+    implementation(libs.compose.icons)
     implementation(libs.androidx.activity.compose)
     implementation(libs.ktor.client.android)
     implementation(libs.android.driver)
     implementation(libs.coilCompose)
+
     implementation(libs.hiltAndroid)
     implementation(libs.hiltNavigationCompose)
-    kapt(libs.hiltCompiler)
     kapt(libs.hiltAndroidCompiler)
+//    kapt(libs.hiltCompiler)
 
     debugImplementation(libs.compose.ui.tooling)
 }

@@ -13,7 +13,8 @@ kotlin {
             }
         }
     }
-    
+    task("testClasses")
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -44,9 +45,6 @@ kotlin {
             implementation(libs.ktor.client.darwin)
             implementation(libs.native.driver)
         }
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
-        }
     }
 }
 
@@ -59,5 +57,13 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+sqldelight {
+    databases {
+        create("TranslateDatabase") {
+            packageName = "com.ravikantsharma.translator_kmm.database.sqldelight"
+        }
     }
 }
