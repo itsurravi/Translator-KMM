@@ -42,7 +42,7 @@ kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.
 native-driver = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelightVersion" }
 runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sqlDelightVersion" }
 
-coilCompose = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion"}
+coilCompose = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion" }
 
 hiltAndroid = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
 hiltAndroidCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltVersion" }
